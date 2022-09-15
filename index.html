@@ -1,11 +1,44 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+
+
+
+
+
+
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-rtdb.js";
+        
+        const firebaseConfig = {
+        apiKey: "AIzaSyCoVf-OUu4OnTlJeXgXtVc4z2vKHFs3u90",
+        authDomain: "kfmgame-to.firebaseapp.com", projectId: "kfmgame-to", 
+        storageBucket: "kfmgame-to.appspot.com",
+        messagingSenderId: "785117656813",
+        appId: "1:785117656813:web:a659b72e2391f7396f3ee4",
+        measurementId: "G-P045SKB81X",
+        databaseURL: "https://kfmgame-to-default-rtdb.europe-west1.firebasedatabase.app/"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const database = getDatabase(app);
+    </script>
 </body>
+
+</html>
+
 </html>
