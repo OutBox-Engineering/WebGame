@@ -5,40 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
     <title>Document</title>
+    <script src="script.js"></script>
 </head>
 
 <body>
 
+    <header id="header">
+
+    </header>
 
 
-    
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" placeholder="name" />
+                <input type="password" placeholder="password" />
+                <input type="text" placeholder="email address" />
+                <button>create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+            <form class="login-form">
+                <input type="text" placeholder="username" />
+                <input type="password" placeholder="password" />
+                <button>login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+            </form>
+        </div>
+    </div>
 
 
 
+    <footer id="footer">
 
+    </footer>
 
     <!-- Beneath this is the database code -->
     <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
-        import { getDatabase, ref, set, child, update, remove } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js";
-        const firebaseConfig = {
-            apiKey: "AIzaSyCoVf-OUu4OnTlJeXgXtVc4z2vKHFs3u90",
-            authDomain: "kfmgame-to.firebaseapp.com",
-            projectId: "kfmgame-to",
-            storageBucket: "kfmgame-to.appspot.com",
-            messagingSenderId: "785117656813",
-            appId: "1:785117656813:web:a659b72e2391f7396f3ee4",
-            measurementId: "G-P045SKB81X",
-            databaseURL: "https://kfmgame-to-default-rtdb.europe-west1.firebasedatabase.app/"
-        };
-        // Initialize Firebase
-        
-        const app = initializeApp(firebaseConfig);
-        const db = getDatabase();
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js"; import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js"; import { getDatabase, ref, set, child, update, remove } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js";
+        const firebaseConfig = { apiKey: "AIzaSyCoVf-OUu4OnTlJeXgXtVc4z2vKHFs3u90", authDomain: "kfmgame-to.firebaseapp.com", projectId: "kfmgame-to", storageBucket: "kfmgame-to.appspot.com", messagingSenderId: "785117656813", appId: "1:785117656813:web:a659b72e2391f7396f3ee4",
+        measurementId: "G-P045SKB81X", databaseURL: "https://kfmgame-to-default-rtdb.europe-west1.firebasedatabase.app/" }; // Initialize Firebase const app = initializeApp(firebaseConfig); const db = getDatabase();
 
-        
+
 
     </script>
 </body>
